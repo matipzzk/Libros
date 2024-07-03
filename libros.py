@@ -1,13 +1,25 @@
-from  funciones_libros import *
-
-libros = []
+from funciones_libros import *
 
 while True:
-    print("1. Agregar libro: ")
-    print("2. Mostrar  libro: ")
-    print("3. Buscar libro por titulo: ")
-    print("4. Actualizar libro: ")
-    print("5. Guardar libro en un archivo JSON: ")
-    print("6. Salir: ")
-    opc = int(input("Ingrese una opción: "))
-    
+    limpiar()
+    print("MENU")
+    print("1.- Agregar libro")
+    print("2.- Mostrar libros")
+    print("3.- Buscar libro")
+    print("4.- Actualizar libro")
+    print("5.- CSV")
+    print("6.- Salir")
+    opc = int(input("Ingrese una opcion: "))
+    limpiar()
+    if opc==1:
+        opc_1()
+    elif opc==2:
+        opc_2()
+    elif opc==3:
+        opc_3()
+    elif opc==4:
+        opc_4()
+    elif opc==5:
+        opc_5()
+    else:
+        opc_6()
